@@ -1,0 +1,148 @@
+.navbar{
+    box-shadow: 0 2px 6px;
+}
+
+header{
+    min-height: 100vh;
+    background:url(../Images/2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header-text{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+#about h5{
+    letter-spacing: 5px;
+
+}
+
+#about h3{
+    font-size: 55px;
+}
+#about img {
+    min-width: 100%;
+}
+
+.special-offer {
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
+    color: white; /* Text color */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.special-offer-text {
+    z-index: 1; /* Ensure text appears above the image */
+}
+.special-offer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+    z-index: 0; /* Ensure overlay appears below text */
+}
+
+.card-img-top {
+    height: 200px; /* Adjust the height as needed */
+    object-fit: contain; /* Maintain aspect ratio and fit entire image */
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 36px;
+    color: #007bff;
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-description {
+    color: #666;
+    margin-top: 10px;
+}
+
+.security-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: opacity 0.3s ease-in-out;
+            height: 100%;
+            opacity: 0.8; /* Initial opacity */
+        }
+
+        .security-card:hover {
+            opacity: 1; /* Opacity on hover */
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 20px;
+        }
+
+        .card-text {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .btn-order {
+            width: 100%;
+        }
+
+        .basic {
+            border: 2px solid #007bff;
+        }
+
+        .standard {
+            border: 2px solid #28a745;
+        }
+
+        .deluxe {
+            border: 2px solid #ffc107;
+        }
+
+        .custom {
+            border: 2px solid #dc3545;
+        }
+
+        .order-price-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
